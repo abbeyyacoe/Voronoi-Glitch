@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title</title>
+<script type="text/javascript" src="rhill-voronoi-core.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="VoronoiDemo.init();" onClick="window.location.href=window.location.href">
+<div id="canvasParent">
+<canvas id="voronoiCanvas" width="1275" height="720"></canvas>
+</div>
+
+<script>
+(function(){
+var srcElem = document.getElementById("script");
+if (srcElem) {
+    var dstElem = document.getElementById("scriptContainer");
+    if (dstElem) {
+        dstElem.innerText = srcElem.innerHTML;
+        }
+    }
+})();
+</script>
+</body>
+</html>
